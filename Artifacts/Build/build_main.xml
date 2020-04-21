@@ -39,7 +39,7 @@
       <arg value="-data" />
       <arg value="${path.code}" />
       <arg value="-b" />
-      <arg value="${path.barfile}" />
+      <arg value="${path.barfile}/${iib.bar}" />
       <!-- <arg value="-p" />
       <arg value="TestClient" /> -->
       <arg value="-a" />
