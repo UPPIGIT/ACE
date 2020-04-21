@@ -1,4 +1,4 @@
-<project name="IIB-CI-MAIN" default="dev" basedir="..">
+<project name="IIB-CI-MAIN" default="dev" basedir="../../Code">
   <description>IIB Continuous Integration Demo (main script)</description>
 
   <target name="init">
@@ -31,6 +31,7 @@
 
     <!-- build workspace and create BAR file -->
 	<echo>"Bar file creation started...."</echo>
+	<echo>Base code directory</echo>
     <exec executable="mqsicreatebar">
       <arg value="-data" />
       <arg value="${basedir}" />
