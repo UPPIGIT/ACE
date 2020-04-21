@@ -17,13 +17,13 @@
 	<echo>"update workspace permissions .............."</echo>
     <!-- update workspace permissions -->
     <!-- https://wiki.jenkins-ci.org/display/JENKINS/Building+a+software+project#Buildingasoftwareproject-JenkinsSetEnvironmentVariables -->
-    <exec executable="sudo">
+   <!--  <exec executable="sudo">
       <arg value="-n" />
       <arg value="bash" />
       <arg value="-c" />
       <arg value="chown -R ${wkspc.owner} ${env.WORKSPACE}; chmod -R ${wkspc.mode} ${env.WORKSPACE}" />
 	  
-    </exec>
+    </exec> -->
 
     <!-- call Ant with build_main.xml as another user in a new shell -->
     <!-- https://ant.apache.org/manual/running.html -->
