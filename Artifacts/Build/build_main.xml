@@ -5,6 +5,7 @@
     <tstamp />
     <property environment="env" />
 	<property name="path.code" value="../../Code" />
+	<property name="path.barfile" value="../../.." />
     <property name="path.build" value="." />
     <property file="${path.build}/build.properties" />
 	<echo>Properties location :${path.build}/build.properties</echo>
@@ -38,7 +39,7 @@
       <arg value="-data" />
       <arg value="${path.code}" />
       <arg value="-b" />
-      <arg value="${iib.bar}" />
+      <arg value="${path.barfile}" />
       <!-- <arg value="-p" />
       <arg value="TestClient" /> -->
       <arg value="-a" />
