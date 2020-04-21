@@ -46,5 +46,14 @@
       <arg value="-c" />
       <arg value="${init.env}; $MQSI_JREPATH/bin/java ${args.jvm} ${args.ant}" />
     </exec> -->
+	
+	  <exec executable="sudo">
+      <arg value="-n" />
+      <arg value="bash" />
+      <arg value="-l" />
+      <arg value="-c" />
+      <arg value="$MQSI_JREPATH/bin/java ${args.jvm} ${args.ant}" />
+    </exec>
+	
   </target>
 </project>
