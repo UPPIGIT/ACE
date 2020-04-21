@@ -4,7 +4,8 @@
   <target name="init">
     <tstamp />
     <property environment="env" />
-    <property name="path.build" value="./Build" />
+	<property name="path.code" value="../../Code" />
+    <property name="path.build" value="." />
     <property file="${path.build}/build.properties" />
 	<echo>Properties location :${path.build}/build.properties</echo>
   </target>
@@ -32,10 +33,10 @@
 
     <!-- build workspace and create BAR file -->
 	<echo>"Bar file creation started...."</echo>
-	<echo>Base code directoryc:${basedir}</echo>
+	<echo>Base code directoryc:${path.code}</echo>
     <exec executable="mqsicreatebar">
       <arg value="-data" />
-      <arg value="${basedir}" />
+      <arg value="${path.code}" />
       <arg value="-b" />
       <arg value="${iib.bar}" />
       <!-- <arg value="-p" />
