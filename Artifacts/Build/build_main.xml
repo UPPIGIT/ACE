@@ -6,6 +6,7 @@
     <property environment="env" />
     <property name="path.build" value="Build" />
     <property file="${path.build}/build.properties" />
+	<echo>Properties location :${path.build}/build.properties</echo>
   </target>
 
   <target name="dev" depends="init">
@@ -31,7 +32,7 @@
 
     <!-- build workspace and create BAR file -->
 	<echo>"Bar file creation started...."</echo>
-	<echo>Base code directory</echo>
+	<echo>Base code directoryc:${basedir}</echo>
     <exec executable="mqsicreatebar">
       <arg value="-data" />
       <arg value="${basedir}" />
@@ -77,7 +78,7 @@
       <arg value="HTTPJavaEchoApp" />
     </exec> -->
 
-	<echo>"Bar file Deployment steared to broker :"${iib.node}</echo>
+	<echo>"Bar file Deployment started to broker :"${iib.node}</echo>
     <exec executable="mqsideploy">
       <arg value="${iib.node}" />
       <arg value="-e" />
