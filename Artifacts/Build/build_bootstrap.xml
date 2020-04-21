@@ -37,7 +37,7 @@
     <property name="init.env" value=". ${iib.mqsiprofile}" />
 	<echo>"call Ant with build_main.xml as another user in a new shell"</echo>
 
-    <exec executable="sudo">
+<!--     <exec executable="sudo">
       <arg value="-n" />
       <arg value="-u" />
       <arg value="${user.iib}" />
@@ -45,6 +45,6 @@
       <arg value="-l" />
       <arg value="-c" />
       <arg value="${init.env}; $MQSI_JREPATH/bin/java ${args.jvm} ${args.ant}" />
-    </exec>
+    </exec> -->
   </target>
 </project>
