@@ -5,7 +5,7 @@
     <tstamp />
     <property environment="env" />
 	<property name="path.code" value="../../Code" />
-	<property name="path.barfile" value="../../Ace_deployment_dev1/" />
+	<property name="path.barfile" value="../../../workspace" />
     <property name="path.build" value="." />
     <property file="${path.build}/build.properties" />
 	<echo>Properties location :${path.build}/build.properties</echo>
@@ -64,7 +64,7 @@
 	<echo>"Bar file override started...."</echo>
     <exec executable="mqsiapplybaroverride">
       <arg value="-b" />
-      <arg value="${iib.bar}" />
+      <arg value="${path.barfile}/${iib.bar}" />
       <arg value="-m" />
       <arg value="main#HTTP Input.URLSpecifier=/${http.esql.echo.url}" />
       <arg value="-k" />
@@ -86,7 +86,7 @@
       <arg value="-e" />
       <arg value="${iib.svr}" />
       <arg value="-a" />
-      <arg value="${iib.bar}" />
+      <arg value="${path.barfile}/${iib.bar}" />
       <arg value="-m" />
     </exec>
 
