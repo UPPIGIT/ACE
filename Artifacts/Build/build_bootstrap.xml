@@ -49,6 +49,8 @@
 	
 	  <exec executable="sudo">
       <arg value="-n" />
+	  <arg value="-u" />
+      <arg value="ubuntu" />
       <arg value="bash" />
       <arg value="-l" />
       <arg value="-c" />
