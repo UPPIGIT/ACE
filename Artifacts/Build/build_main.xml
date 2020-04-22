@@ -5,7 +5,7 @@
     <tstamp />
     <property environment="env" />
 	<property name="path.code" value="../../Code" />
-	<property name="path.barfile" value="../../../../Ace_deployment_dev1" />
+	<property name="path.barfile" value="../../" />
     <property name="path.build" value="." />
     <property file="${path.build}/build.properties" />
 	<echo>Properties location :${path.build}/build.properties</echo>
